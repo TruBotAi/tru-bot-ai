@@ -1,14 +1,15 @@
-import "./App.css";
-import "./index.css";
+import "../src/assets/sass/App.scss"
+import Header from "./components/Header"
+import "../src/assets/sass/index.scss"
 
 function App() {
   return (
     <>
-      <div>
-        <h1 className="text-2xl item-center justify-center flex">TruBotAi</h1>
-      </div>
+      <main>
+        <Header />
+      </main>
     </>
-  );
+  )
 }
 
-export default App;
+export default App

@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box !important;
+}
+body {
+  margin: 0;
+}
+#root {
+  background: #151515;
+  background: #000;
+  height: 100dvh !important;
+  // margin: 0;
+}
+main {
+  border: 0.1px solid transparent;
+}
+header {
+  //   max-width: 800px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px 10px#7f7f7f95;
+  nav {
+    ul li {
+      border-radius: 12px;
+    }
+  }
+}
