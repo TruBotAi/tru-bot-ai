@@ -1,7 +1,7 @@
 function Header() {
   return (
     <>
-      <header className=' flex justify-between items-center p-3 rounded-full bg-white text-black w-6xl '>
+      <header className=' flex justify-between items-center p-3 rounded-full  text-black w-6xl '>
         <div className='logo pl-5 '>
           <h1 className='m-none font-bold text-2xl'>TruBot</h1>
         </div>
@@ -16,8 +16,8 @@ function Header() {
           </ul>
         </nav>
         <div className='acct'>
-          <button className='text-base font-lg mr-5 cursor-pointer'>SignUp</button>
-          <button className='border-2 bg-black p-2  rounded-full px-5 text-white  cursor-pointer text-lg font-bold'>Login</button>
+          <button className='text-base font-lg mr-5 cursor-pointer text-indigo-700'>SignUp</button>
+          <button className=' login border-2 p-2  rounded-full px-5 border-indigo-500/100 bg-indigo-50 text-indigo-500  cursor-pointer text-lg font-bold'>Login</button>
         </div>
       </header>
     </>
