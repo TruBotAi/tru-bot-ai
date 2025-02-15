@@ -1,7 +1,7 @@
 function Header() {
   return (
     <>
-      <header className=' flex justify-between items-center p-3 rounded-full  text-black w-6xl '>
+      <header className=' flex justify-between items-center p-3 rounded-full  text-black w-6xl  '>
         <div className='logo pl-5 '>
           <h1 className='m-none font-bold text-2xl'>TruBot</h1>
         </div>
