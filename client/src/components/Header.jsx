@@ -1,7 +1,7 @@
 function Header() {
   return (
     <>
-      <header className=' flex justify-between items-center p-2 rounded-3xl text-black w-6xl  '>
+      <header className=' flex justify-between items-center p-2 rounded-3xl text-black w-6xl bg-indigo-100 border-white  border-4 border-red-900 border-solid'>
         <div className='logo pl-5 '>
           <div className='m-none font-bold text-2xl flex items-center gap-1'>
             <span>
@@ -39,7 +39,7 @@ function Header() {
         </nav>
         <div className='acct'>
           <button className='text-base font-lg mr-5 cursor-pointer text-indigo-700'>SignUp</button>
-          <button className=' login border-2 p-2  rounded-3xl px-5 border-indigo-500/100 bg-indigo-50 text-indigo-500  cursor-pointer text-lg font-bold'>Login</button>
+          <button className=' login border-2 p-2  rounded-3xl px-5 border-indigo-500/100 bg-indigo-200 text-indigo-500  cursor-pointer text-lg font-bold'>Login</button>
         </div>
       </header>
     </>
