@@ -1,7 +1,7 @@
 function Header() {
   return (
     <>
-      <header className=' flex justify-between items-center p-2 rounded-3xl text-black w-6xl border-4 border-indigo-900 relative overflow-hidden'>
+      <header className=' flex justify-between items-center p-2 rounded-3xl text-black w-6xl border-4 border-indigo-900 relative overflow-hidden mx-auto my-6 '>
         <div className='w-full h-full absolute top-0  bg-indigo-100 left-0'></div>
 
         <div className='logo pl-5  z-1'>
