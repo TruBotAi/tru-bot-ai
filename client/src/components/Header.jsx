@@ -1,8 +1,10 @@
 function Header() {
   return (
     <>
-      <header className=' flex justify-between items-center p-2 rounded-3xl text-black w-6xl bg-indigo-100 border-white  border-4 border-red-900 border-solid'>
-        <div className='logo pl-5 '>
+      <header className=' flex justify-between items-center p-2 rounded-3xl text-black w-6xl border-4 border-indigo-900 relative overflow-hidden'>
+        <div className='w-full h-full absolute top-0  bg-indigo-100 left-0'></div>
+
+        <div className='logo pl-5  z-1'>
           <div className='m-none font-bold text-2xl flex items-center gap-1'>
             <span>
               <svg fill='none' height='45' viewBox='0 0 164 125' width='44'>
@@ -28,7 +30,7 @@ function Header() {
           </div>
         </div>
 
-        <nav className='flex items-center gap-4 justify-between'>
+        <nav className='flex items-center gap-4 justify-between z-1'>
           <ul className='flex item-center justify-center gap-5 font-medium'>
             {["Home", "Pricing", "Blog", "About", "Contact"].map((li) => (
               <li key={li} className='px-5 py-2 rounded-xs cursor-pointer'>
@@ -37,7 +39,7 @@ function Header() {
             ))}
           </ul>
         </nav>
-        <div className='acct'>
+        <div className='acct z-1'>
           <button className='text-base font-lg mr-5 cursor-pointer text-indigo-700'>SignUp</button>
           <button className=' login border-2 p-2  rounded-3xl px-5 border-indigo-500/100 bg-indigo-200 text-indigo-500  cursor-pointer text-lg font-bold'>Login</button>
         </div>
