@@ -33,7 +33,7 @@ function Header() {
         <nav className='flex items-center gap-4 justify-between z-1'>
           <ul className='flex item-center justify-center gap-5 font-medium'>
             {["Home", "Pricing", "Blog", "About", "Contact"].map((li) => (
-              <li key={li} className='px-5 py-2 rounded-xs cursor-pointer'>
+              <li key={li} className='px-5 py-2 rounded-xs cursor-pointer hover:text-indigo-500 hover:underline'>
                 {li}
               </li>
             ))}
@@ -41,7 +41,9 @@ function Header() {
         </nav>
         <div className='acct z-1'>
           <button className='text-base font-lg mr-5 cursor-pointer text-indigo-700'>SignUp</button>
-          <button className=' login border-2 p-2  rounded-3xl px-5 border-indigo-500/100 bg-indigo-200 text-indigo-500  cursor-pointer text-lg font-bold'>Login</button>
+          <button className=' login border-2 p-2  rounded-xl px-5 border-indigo-500/100 bg-indigo-200 text-indigo-500  cursor-pointer text-lg font-bold hover:text-white hover:bg-indigo-500'>
+            Login
+          </button>
         </div>
       </header>
     </>
