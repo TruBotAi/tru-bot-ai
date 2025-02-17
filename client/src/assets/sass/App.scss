@@ -3,16 +3,19 @@
 }
 body {
   margin: 0;
+  background: #000;
 }
 #root {
-  background: #151515;
-  background: #000;
-  height: 100dvh !important;
+  // background: #151515;
+  // height: 100dvh !important;
   // margin: 0;
 }
 main {
-  border: 0.1px solid transparent;
+  max-width: 1800px;
+  margin: auto;
+  // border: 2px SOLID RED;
 }
-header {
-  // box-shadow: 0 0 30px 15px #ffffff48;
+
+.hero {
+  margin-top: 20px;
 }
