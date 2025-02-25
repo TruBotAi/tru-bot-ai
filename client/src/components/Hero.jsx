@@ -1,10 +1,37 @@
 import img from "../assets/imgs/copied/i7e8twz7nl3trq39.gif"
 
 function Hero() {
+  const Testimonials = [
+    {
+      amount: "60k",
+      info: "leads generated every month",
+      text: "Reflecting back to when we started, we have received over 300K+ leads from all our websites, is an outstanding achievement. We've never seen an ROI of this level in any other martech platform.",
+      name: "Cheytan Kumbhar",
+      position: "Group CEO",
+      img: img,
+    },
+    {
+      amount: "150k",
+      info: "feedbacks collected on WhatsApp",
+      text: "Thanks to WotNot.io, we effortlessly automated feedback collection from over 100k patients via Whatsapp chatbots. Their seamless integration made the process smooth, enhancing patient engagement significantly.",
+      name: "Khaled Ahmed",
+      position: "IT Manager",
+      img: img,
+    },
+    {
+      amount: "85%",
+      info: "reduction in delays",
+      text: "I love how helpful their sales teams were throughout the process. The sales team understood our challenge and proposed a custom-fit solution to us.",
+      name: "Shashank Shah",
+      position: "Asst. Manager - Business Transformation",
+      img: img,
+    },
+  ]
+
   return (
     <>
-      <section className='hero text-center p-12 h-screen relative '>
-        <div className='robots w-7xl h-full top-0 left-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-30 overflow-hidden'>
+      <section className='hero text-center p-12 h-full relative '>
+        <div className='robots w-8xl h-full top-0 left-0 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-30 overflow-hidden'>
           <span className='absolute rotate-30 left-0  -translate-x-10'>
             <svg fill='red' height='425' viewBox='0 0 164 125' width='440'>
               <path
@@ -102,6 +129,139 @@ function Hero() {
 
         <div className='rounded-xl border-4 border-indigo-400 object-cover object-center w-5xl h-5xl m-auto overflow-hidden relative'>
           <img src={img} alt='hero' className='w-full h-full' />
+        </div>
+      </section>
+      <hr className=' h-1 bg-[#263238]' />
+      <section className='text-white text-center py-6 w-9xl m-auto'>
+        <h1 className='text-5xl font-bold w-3xl m-auto my-9'>Your Personal AI Chat Assistant for all your online needs.</h1>
+        <div className='cards flex items-center gap-12 justify-center p-9 flex-wrap '>
+          <div className='card border-2 hover:border-indigo-500 border-transparent w-sm p-4 text-center hover:bg-gray-900 cursor-pointer rounded-xl '>
+            <div className='m-auto w-fit p-2'>
+              <svg height='75' id='Layer_1' version='1.1' viewBox='0 0 56.693 56.693' width='75' fill='white'>
+                <g>
+                  <path d='M46.3802,10.7138c-4.6512-4.6565-10.8365-7.222-17.4266-7.2247c-13.5785,0-24.63,11.0506-24.6353,24.6333   c-0.0019,4.342,1.1325,8.58,3.2884,12.3159l-3.495,12.7657l13.0595-3.4257c3.5982,1.9626,7.6495,2.9971,11.7726,2.9985h0.01   c0.0008,0-0.0006,0,0.0002,0c13.5771,0,24.6293-11.0517,24.635-24.6347C53.5914,21.5595,51.0313,15.3701,46.3802,10.7138z    M28.9537,48.6163h-0.0083c-3.674-0.0014-7.2777-0.9886-10.4215-2.8541l-0.7476-0.4437l-7.7497,2.0328l2.0686-7.5558   l-0.4869-0.7748c-2.0496-3.26-3.1321-7.028-3.1305-10.8969c0.0044-11.2894,9.19-20.474,20.4842-20.474   c5.469,0.0017,10.6101,2.1344,14.476,6.0047c3.8658,3.8703,5.9936,9.0148,5.9914,14.4859   C49.4248,39.4307,40.2395,48.6163,28.9537,48.6163z' />
+                  <path d='M40.1851,33.281c-0.6155-0.3081-3.6419-1.797-4.2061-2.0026c-0.5642-0.2054-0.9746-0.3081-1.3849,0.3081   c-0.4103,0.6161-1.59,2.0027-1.9491,2.4136c-0.359,0.4106-0.7182,0.4623-1.3336,0.1539c-0.6155-0.3081-2.5989-0.958-4.95-3.0551   c-1.83-1.6323-3.0653-3.6479-3.4245-4.2643c-0.359-0.6161-0.0382-0.9492,0.27-1.2562c0.2769-0.2759,0.6156-0.7189,0.9234-1.0784   c0.3077-0.3593,0.4103-0.6163,0.6155-1.0268c0.2052-0.4109,0.1027-0.7704-0.0513-1.0784   c-0.1539-0.3081-1.3849-3.3379-1.8978-4.5706c-0.4998-1.2001-1.0072-1.0375-1.3851-1.0566   c-0.3585-0.0179-0.7694-0.0216-1.1797-0.0216s-1.0773,0.1541-1.6414,0.7702c-0.5642,0.6163-2.1545,2.1056-2.1545,5.1351   c0,3.0299,2.2057,5.9569,2.5135,6.3676c0.3077,0.411,4.3405,6.6282,10.5153,9.2945c1.4686,0.6343,2.6152,1.013,3.5091,1.2966   c1.4746,0.4686,2.8165,0.4024,3.8771,0.2439c1.1827-0.1767,3.6419-1.489,4.1548-2.9267c0.513-1.438,0.513-2.6706,0.359-2.9272   C41.211,33.7433,40.8006,33.5892,40.1851,33.281z' />
+                </g>
+              </svg>
+            </div>
+            <h2 className='m-4 font-bold text-3xl'>Whatsapp</h2>
+            <p>Connect with our chatbot easily on WhatsApp and get instant assistance on the go, wherever you are in the world.</p>
+          </div>
+          <div className='card border-2 hover:border-indigo-500 border-transparent w-sm p-4 text-center hover:bg-gray-900 cursor-pointer rounded-xl '>
+            <div className='m-auto w-fit p-2'>
+              <svg viewBox='0 0 512 512' width='75' height='75' fill='#fff'>
+                <title />
+                <g data-name='1' id='_1'>
+                  <path d='M376.48,446.25a15,15,0,0,1-11.29-5.12l-48.48-55.39A238.09,238.09,0,0,1,257,393.25c-53.67,0-104.25-17.43-142.42-49.07-39-32.32-60.45-75.53-60.45-121.68s21.47-89.36,60.45-121.68C152.75,69.18,203.33,51.75,257,51.75s104.24,17.43,142.41,49.07c39,32.32,60.45,75.53,60.45,121.68,0,49.27-24.82,95.49-68.38,127.92v80.83a15,15,0,0,1-15,15Zm-54.72-92.51a15,15,0,0,1,11.29,5.12l28.43,32.48V342.69A15,15,0,0,1,368,330.31c39.31-26.88,61.85-66.18,61.85-107.81,0-77.61-77.55-140.75-172.86-140.75S84.13,144.89,84.13,222.5,161.68,363.25,257,363.25a206.92,206.92,0,0,0,60.39-8.86A15.32,15.32,0,0,1,321.76,353.74Z' />
+                  <path d='M319.77,179.57H194.22a15,15,0,1,1,0-30H319.77a15,15,0,0,1,0,30Z' />
+                  <path d='M319.77,236.17H194.22a15,15,0,0,1,0-30H319.77a15,15,0,0,1,0,30Z' />
+                  <path d='M319.77,292.77H194.22a15,15,0,0,1,0-30H319.77a15,15,0,0,1,0,30Z' />
+                </g>
+              </svg>
+            </div>
+            <h2 className='m-4 font-bold text-3xl'>Live Chat</h2>
+            <p>Experience the convenience and efficiency of live chat with our AI chatbot and get real-time support that meets your needs.</p>
+          </div>
+          <div className='card border-2 hover:border-indigo-500 border-transparent w-sm p-4 text-center hover:bg-gray-900 cursor-pointer rounded-xl '>
+            <div className='m-auto w-fit p-2'>
+              <svg height='75' id='icon' viewBox='0 0 32 32' width='75'>
+                <title />
+                <path fill='#ffff' d='M16,19a6.9908,6.9908,0,0,1-5.833-3.1287l1.666-1.1074a5.0007,5.0007,0,0,0,8.334,0l1.666,1.1074A6.9908,6.9908,0,0,1,16,19Z' />
+                <path fill='#ffff' d='M20,8a2,2,0,1,0,2,2A1.9806,1.9806,0,0,0,20,8Z' />
+                <path fill='#ffff' d='M12,8a2,2,0,1,0,2,2A1.9806,1.9806,0,0,0,12,8Z' />
+                <path
+                  fill='#ffff'
+                  d='M17.7358,30,16,29l4-7h6a1.9966,1.9966,0,0,0,2-2V6a1.9966,1.9966,0,0,0-2-2H6A1.9966,1.9966,0,0,0,4,6V20a1.9966,1.9966,0,0,0,2,2h9v2H6a3.9993,3.9993,0,0,1-4-4V6A3.9988,3.9988,0,0,1,6,2H26a3.9988,3.9988,0,0,1,4,4V20a3.9993,3.9993,0,0,1-4,4H21.1646Z'
+                />
+              </svg>
+            </div>
+            <h2 className='m-4 font-bold text-3xl'>Chatbot</h2>
+            <p>Welcome to our chatbot page, where you can connect with our AI-powered chatbot and get quick and accurate answers to all your questions and concerns.</p>
+          </div>
+
+          <div className='card border-2 hover:border-indigo-500 border-transparent w-sm p-4 text-center hover:bg-gray-900 cursor-pointer rounded-xl '>
+            <div className='m-auto w-fit p-2'>
+              <svg enableBackground='new 0 0 32 32' height='75' version='1.1' viewBox='0 0 32 32' width='75'>
+                <g id='globe_sphere'>
+                  <g>
+                    <path
+                      d='M16.499,9.162c-2.735,0-5.469-0.315-8.123-0.937C8.107,8.162,7.94,7.894,8.003,7.624    c0.063-0.268,0.325-0.435,0.602-0.373c5.793,1.358,11.95,1.187,17.678-0.498c0.27-0.076,0.544,0.073,0.621,0.338    c0.078,0.266-0.073,0.543-0.338,0.621C23.295,8.674,19.908,9.162,16.499,9.162z'
+                      fill='#fff'
+                    />
+                    <path
+                      d='M26.424,26.362c-0.047,0-0.094-0.007-0.142-0.021c-6.359-1.871-13.207-1.871-19.566,0    c-0.269,0.075-0.544-0.073-0.621-0.338c-0.078-0.266,0.073-0.543,0.338-0.621c6.545-1.926,13.588-1.926,20.133,0    c0.265,0.078,0.416,0.355,0.338,0.621C26.84,26.222,26.64,26.362,26.424,26.362z'
+                      fill='#fff'
+                    />
+                    <path
+                      d='M15.888,30.639c-0.098,0-0.195-0.028-0.282-0.087c-4.667-3.185-7.453-8.422-7.453-14.009    c0-4.527,1.781-8.788,5.017-11.998c0.197-0.197,0.514-0.193,0.707,0.002c0.195,0.196,0.193,0.513-0.002,0.707    c-3.045,3.021-4.722,7.03-4.722,11.289c0,5.256,2.623,10.185,7.018,13.183c0.228,0.155,0.286,0.467,0.131,0.695    C16.204,30.563,16.047,30.639,15.888,30.639z'
+                      fill='#fff'
+                    />
+                    <path
+                      d='M17.153,30.639c-0.159,0-0.316-0.076-0.413-0.218c-0.155-0.229-0.097-0.54,0.131-0.695    c4.395-2.998,7.018-7.927,7.018-13.183S21.266,6.358,16.871,3.36c-0.228-0.155-0.286-0.467-0.131-0.695    c0.156-0.228,0.468-0.284,0.695-0.131c4.667,3.185,7.453,8.422,7.453,14.009s-2.786,10.824-7.453,14.009    C17.349,30.61,17.251,30.639,17.153,30.639z'
+                      fill='#fff'
+                    />
+                    <g>
+                      <path d='M16.499,30.49c-0.276,0-0.5-0.224-0.5-0.5V3.096c0-0.276,0.224-0.5,0.5-0.5s0.5,0.224,0.5,0.5V29.99     C16.999,30.267,16.775,30.49,16.499,30.49z' fill='#fff' />
+                    </g>
+                    <g>
+                      <path d='M30.446,17.043H4.552c-0.276,0-0.5-0.224-0.5-0.5s0.224-0.5,0.5-0.5h25.895c0.276,0,0.5,0.224,0.5,0.5     S30.723,17.043,30.446,17.043z' fill='#fff' />
+                    </g>
+                    <path
+                      d='M16.499,31.043c-7.995,0-14.5-6.505-14.5-14.5c0-3.521,1.278-6.919,3.6-9.565    C5.781,6.77,6.096,6.75,6.305,6.932C6.512,7.114,6.532,7.43,6.351,7.638c-2.161,2.463-3.352,5.626-3.352,8.905    c0,7.444,6.056,13.5,13.5,13.5s13.5-6.056,13.5-13.5s-6.056-13.5-13.5-13.5c-3.078,0-5.976,1.008-8.379,2.915    C7.904,6.13,7.59,6.095,7.418,5.877c-0.172-0.216-0.136-0.53,0.081-0.702c2.581-2.049,5.693-3.132,9-3.132    c7.995,0,14.5,6.505,14.5,14.5S24.494,31.043,16.499,31.043z'
+                      fill='#fff'
+                    />
+                  </g>
+                </g>
+              </svg>
+            </div>
+            <h2 className='m-4 font-bold text-3xl'>Website</h2>
+            <p>Our AI-powered chatbot is available 24/7 to provide you with personalized assistance and help you find the information you need quickly and easily</p>
+          </div>
+        </div>
+      </section>
+      <hr className=' h-1 bg-[#263238]' />
+      <section className='text-white w-9xl m-auto p-4'>
+        <h2 className='font-bold text-5xl text-center my-8'>Testimonials</h2>
+        <div className='cards flex gap-5 justify-center'>
+          {Testimonials.map((testiony) => (
+            <div key={testiony.amount} className='card rounded-xl p-5 w-sm h-fit bg-gray-800'>
+              <div className='top flex items-center gap-3 '>
+                <div className=''>
+                  <h2 className='text-7xl font-bold'>{testiony.amount}</h2>
+                </div>
+                <div className='w-full'>
+                  <p className='font-bold text-xl leading-6'>{testiony.info}</p>
+                </div>
+              </div>
+              <hr className='my-7' />
+              <div className='info '>
+                <div className='my-6'>
+                  <p className='text-lg'>{testiony.text} </p>
+                </div>
+                <div className='flex items-center justify-end gap-3'>
+                  <div className='text-end'>
+                    <h2>{testiony.name}</h2>
+                    <p>{testiony.position}</p>
+                  </div>
+                  <div className='border-2 border-indigo-500 rounded-full w-15 h-15 overflow-hidden'>
+                    <img src={testiony.img} alt='#' className='w-full h-full object-cover object-center' />
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
+      <section className='text-center p-8'>
+        <div className='text-white'>
+          <hgroup>
+            <h1 className='font-bold text-6xl'>Pricing</h1>
+            <div className='Spacer_root__uoSvA'></div>
+            <p className='text-xl mt-7'>
+              <span>Use Linear for free with your whole team. Upgrade to enable unlimited issues, enhanced security controls, and additional features.</span>
+            </p>
+          </hgroup>
         </div>
       </section>
     </>
