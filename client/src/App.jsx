@@ -1,8 +1,8 @@
-import "../src/assets/sass/App.scss"
-import Header from "./components/Header"
-import "../src/assets/sass/index.scss"
-import Hero from "./components/Hero"
-import Footer from "./components/Footer"
+import "../src/assets/sass/App.scss";
+import Header from "./components/Header";
+import "./index.css";
+import Hero from "./components/Hero";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <Footer />
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
